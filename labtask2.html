@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>University Admission Form</title>
+</head>
+
+<body>
+
+<h1>University Online Admission Form</h1>
+
+<form>
+
+
+<fieldset>
+<legend>Personal Info</legend>
+
+<table>
+
+<tr>
+<td>First Name</td>
+<td><input type="text" name="fname" required maxlength="20"></td>
+</tr>
+
+<tr>
+<td>Last Name</td>
+<td><input type="text" name="lname" required maxlength="20"></td>
+</tr>
+
+<tr>
+<td>Email</td>
+<td><input type="email" name="email" required></td>
+</tr>
+
+<tr>
+<td>Phone Number</td>
+<td><input type="text" name="phone" required maxlength="11"></td>
+</tr>
+
+<tr>
+<td>Address</td>
+<td><input type="text" name="address" required maxlength="60"></td>
+</tr>
+
+<tr>
+<td>Father's Name</td>
+<td><input type="text" name="father" required maxlength="30"></td>
+</tr>
+
+<tr>
+<td>Mother's Name</td>
+<td><input type="text" name="mother" required maxlength="30"></td>
+</tr>
+
+<tr>
+<td>Date of Birth</td>
+<td><input type="date" name="dob" required></td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="gender" value="Male" required> Male
+<input type="radio" name="gender" value="Female"> Female
+<input type="radio" name="gender" value="Other"> Other
+</td>
+</tr>
+
+<tr>
+<td>Interests</td>
+<td>
+<input type="checkbox" name="interests" value="Sports"> Sports
+<input type="checkbox" name="interests" value="Music"> Music
+<input type="checkbox" name="interests" value="Programming"> Programming
+</td>
+</tr>
+
+</table>
+</fieldset>
+
+<br>
+
+
+<fieldset>
+<legend>Academic Info</legend>
+
+<table>
+
+<tr>
+<td>School Name</td>
+<td><input type="text" name="school" required maxlength="40"></td>
+</tr>
+
+<tr>
+<td>College Name</td>
+<td><input type="text" name="college" required maxlength="40"></td>
+</tr>
+
+<tr>
+<td>SSC CGPA</td>
+<td><input type="text" name="ssc" required maxlength="4"></td>
+</tr>
+<tr>
+<td> Ssc Passing Year</td>
+<td><input type="text" name="year" required maxlength="4"></td>
+</tr>
+
+<tr>
+<td>HSC CGPA</td>
+<td><input type="text" name="hsc" required maxlength="4"></td>
+</tr>
+
+<tr>
+<td> Hsc Passing Year</td>
+<td><input type="text" name="year" required maxlength="4"></td>
+</tr>
+
+<tr>
+<td>Preferred Department</td>
+<td>
+<select name="department" required>
+<option value="">Select</option>
+<option>CSE</option>
+<option>BBA</option>
+<option>EEE</option>
+<option>English</option>
+<option>Law</option>
+</select>
+</td>
+</tr>
+
+</table>
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Documents Upload</legend>
+
+<table>
+
+<tr>
+<td>Upload Photo</td>
+<td><input type="file" name="photo" required></td>
+</tr>
+
+<tr>
+<td>Upload Transcript</td>
+<td><input type="file" name="transcript" required></td>
+</tr>
+
+<tr>
+<td>Upload Resume</td>
+<td><input type="file" name="resume"></td>
+</tr>
+
+</table>
+</fieldset>
+
+<br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
