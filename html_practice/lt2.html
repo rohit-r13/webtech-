@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Your Name" />
+  <meta name="description" content="University online admission form for new students" />
+  <meta name="keywords" content="admission form, university, online application, student registration" />
+  <title>University Online Admission Form</title>
+</head>
+
+<body>
+  <header>
+    <h1>University Online Admission Form</h1>
+    <p>Please fill in the details carefully. Fields marked * are required.</p>
+  </header>
+
+  <main>
+    <form >
+      
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullName">Full Name </label><br />
+        <input type="text" id="fullName" name="fullName" maxlength="50" required />
+        <br /><br />
+
+        <label for="fatherName">Father's Name *</label><br />
+        <input type="text" id="fatherName" name="fatherName" maxlength="50" required />
+        <br /><br />
+
+        <label for="motherName">Mother's Name *</label><br />
+        <input type="text" id="motherName" name="motherName" maxlength="50" required />
+        <br /><br />
+
+        <label for="email">Email Address *</label><br />
+        <input type="email" id="email" name="email" required />
+        <br /><br />
+
+        <label for="phone">Phone Number *</label><br />
+        <input type="text" id="phone" name="phone" maxlength="15" required />
+        <br /><br />
+
+        <label for="dob">Date of Birth *</label><br />
+        <input type="date" id="dob" name="dob" required />
+        <br /><br />
+
+        <label>Gender *</label><br />
+        <input type="radio" id="male" name="gender" value="Male" required />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female" required />
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other" required />
+        <label for="other">Other</label>
+        <br /><br />
+
+        <label for="address">Address *</label><br />
+        <input type="text" id="address" name="address" maxlength="100" required />
+        <br /><br />
+      </fieldset>
+
+      <br />
+
+      <!-- Academic Information -->
+      <fieldset>
+        <legend>Academic Information</legend>
+
+        <label for="sscBoard">SSC Board *</label><br />
+        <input type="text" id="sscBoard" name="sscBoard" maxlength="30" required />
+        <br /><br />
+
+        <label for="sscYear">SSC Passing Year *</label><br />
+        <input type="text" id="sscYear" name="sscYear" maxlength="4" required />
+        <br /><br />
+
+        <label for="sscGpa">SSC GPA *</label><br />
+        <input type="text" id="sscGpa" name="sscGpa" maxlength="4" required />
+        <br /><br />
+
+        <label for="hscBoard">HSC Board *</label><br />
+        <input type="text" id="hscBoard" name="hscBoard" maxlength="30" required />
+        <br /><br />
+
+        <label for="hscYear">HSC Passing Year *</label><br />
+        <input type="text" id="hscYear" name="hscYear" maxlength="4" required />
+        <br /><br />
+
+        <label for="hscGpa">HSC GPA *</label><br />
+        <input type="text" id="hscGpa" name="hscGpa" maxlength="4" required />
+        <br /><br />
+
+        <label for="department">Preferred Department *</label><br />
+        <select id="department" name="department" required>
+          <option value="">-- Select Department --</option>
+          <option value="CSE">CSE</option>
+          <option value="EEE">EEE</option>
+          <option value="BBA">BBA</option>
+          <option value="LLB">LLB</option>
+          <option value="English">English</option>
+        </select>
+        <br /><br />
+
+        <label>Interests (Select multiple)</label><br />
+        <input type="checkbox" id="interest1" name="interests" value="Programming" />
+        <label for="interest1">Programming</label><br />
+
+        <input type="checkbox" id="interest2" name="interests" value="Robotics" />
+        <label for="interest2">Robotics</label><br />
+
+        <input type="checkbox" id="interest3" name="interests" value="AI-ML" />
+        <label for="interest3">AI / ML</label><br />
+
+        <input type="checkbox" id="interest4" name="interests" value="Business" />
+        <label for="interest4">Business</label><br />
+        <br />
+      </fieldset>
+
+      <br />
+
+      <!-- Document Upload -->
+      <fieldset>
+        <legend>Necessary Documents</legend>
+
+        <label for="photo">Passport Size Photo *</label><br />
+        <input type="file" id="photo" name="photo" accept=".jpg,.jpeg,.png" required />
+        <br /><br />
+
+        <label for="transcript">SSC/HSC Transcript (PDF) *</label><br />
+        <input type="file" id="transcript" name="transcript" accept=".pdf" required />
+        <br /><br />
+
+        <label for="resume">Resume (Optional)</label><br />
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" />
+        <br /><br />
+      </fieldset>
+
+      <br />
+
+      <!-- Buttons -->
+     
+       
+        <input type="submit" value="Submit Application" />
+        <input type="reset" value="Reset Form" />
+      
+
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2026 University Admission Portal</p>
+  </footer>
+</body>
+</html>

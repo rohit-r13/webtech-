@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Overflow Behavior Test</title>
+
+<style>
+
+/* Common box style */
+.box{
+    width:300px;
+    height:200px;
+    border:2px solid black;
+    padding:10px;
+    margin:20px;
+}
+
+/* overflow: visible
+Content that exceeds the box will be shown outside the box. */
+.visible{
+    overflow:visible;
+    background-color:#f8d7da;
+}
+
+/* overflow: hidden
+Extra content that doesn't fit inside the box will be clipped (not visible). */
+.hidden{
+    overflow:hidden;
+    background-color:#d1ecf1;
+}
+
+/* overflow: scroll
+Scrollbars always appear so the user can scroll to see hidden content. */
+.scroll{
+    overflow:scroll;
+    background-color:#d4edda;
+}
+
+/* overflow: auto
+Scrollbars appear only if the content overflows the container. */
+.auto{
+    overflow:auto;
+    background-color:#fff3cd;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>CSS Overflow Demonstration</h1>
+
+<!-- Visible -->
+<h3>Overflow: visible</h3>
+<div class="box visible">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+perspiciatis unde omnis iste natus error sit voluptatem accusantium
+doloremque laudantium. Nemo enim ipsam voluptatem quia voluptas sit
+aspernatur aut odit aut fugit. Sed quia consequuntur magni dolores eos
+qui ratione voluptatem sequi nesciunt.
+</div>
+
+<!-- Hidden -->
+<h3>Overflow: hidden</h3>
+<div class="box hidden">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+perspiciatis unde omnis iste natus error sit voluptatem accusantium
+doloremque laudantium. Nemo enim ipsam voluptatem quia voluptas sit
+aspernatur aut odit aut fugit. Sed quia consequuntur magni dolores eos
+qui ratione voluptatem sequi nesciunt.
+</div>
+
+<!-- Scroll -->
+<h3>Overflow: scroll</h3>
+<div class="box scroll">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+perspiciatis unde omnis iste natus error sit voluptatem accusantium
+doloremque laudantium. Nemo enim ipsam voluptatem quia voluptas sit
+aspernatur aut odit aut fugit. Sed quia consequuntur magni dolores eos
+qui ratione voluptatem sequi nesciunt.
+</div>
+
+<!-- Auto -->
+<h3>Overflow: auto</h3>
+<div class="box auto">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut
+perspiciatis unde omnis iste natus error sit voluptatem accusantium
+doloremque laudantium. Nemo enim ipsam voluptatem quia voluptas sit
+aspernatur aut odit aut fugit. Sed quia consequuntur magni dolores eos
+qui ratione voluptatem sequi nesciunt.
+</div>
+
+</body>
+</html>

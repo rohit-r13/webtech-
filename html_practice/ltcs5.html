@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Floating Contact Widget</title>
+
+<style>
+
+/* Page content just for scrolling */
+body{
+    font-family: Arial, sans-serif;
+    height:2000px;
+}
+
+/* Contact Widget */
+.contact-widget{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    z-index: 1000;
+    width: 180px;
+}
+
+/* Links inside widget */
+.contact-widget a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover effect */
+.contact-widget:hover{
+    background-color: #2e7d32;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Company Website</h1>
+<p>Scroll down to see the contact widget always visible on the screen.</p>
+
+<!-- Floating Contact Widget -->
+<div class="contact-widget">
+
+<h3>Contact Us</h3>
+
+<p>📞 +1 234 567 890</p>
+
+<p>
+📧 <a href="mailto:support@company.com">
+support@company.com
+</a>
+</p>
+
+</div>
+
+</body>
+</html>

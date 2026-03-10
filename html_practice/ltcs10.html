@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Z-Index Layering Demo</title>
+
+<style>
+
+/* Container just for positioning reference */
+.container{
+    position: relative;
+    height:400px;
+}
+
+/* Common box style */
+.box{
+    position:absolute;
+    width:200px;
+    height:150px;
+    color:white;
+    font-size:20px;
+    text-align:center;
+    line-height:150px;
+    font-weight:bold;
+}
+
+/* Red box */
+.red{
+    background-color:red;
+    top:50px;
+    left:50px;
+    z-index:1;   /* Lowest layer */
+}
+
+/* Blue box */
+.blue{
+    background-color:blue;
+    top:100px;
+    left:120px;
+    z-index:2;   /* Middle layer */
+}
+
+/* Green box */
+.green{
+    background-color:green;
+    top:150px;
+    left:190px;
+    z-index:3;   /* Top layer */
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Z-Index Stacking Example</h1>
+<p>Three boxes overlap. The higher the z-index, the closer it appears to the viewer.</p>
+
+<div class="container">
+
+<div class="box red">Box 1</div>
+
+<div class="box blue">Box 2</div>
+
+<div class="box green">Box 3</div>
+
+</div>
+
+</body>
+</html>
