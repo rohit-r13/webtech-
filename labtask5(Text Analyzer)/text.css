@@ -1,0 +1,23 @@
+body{
+font-family: Arial;
+padding:30px;
+background-color:#f0f8ff;
+}
+
+#bro{
+color:red;
+background-color:yellow;
+font-weight:bold;
+}
+
+textarea{
+width:300px;
+padding:10px;
+}
+
+#rept{
+margin-top:20px;
+padding:10px;
+border:1px solid black;
+background:white;
+}
