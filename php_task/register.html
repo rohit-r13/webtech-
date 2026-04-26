@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PHP Form Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        select {
+            margin: 8px 0;
+            padding: 8px;
+            width: 320px;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registration Form - PHP Validation</h2>
+    <form method="post" action="register.php">
+        <label>Full Name:</label><br>
+        <input type="text" name="name"><br>
+        <span class="error">*</span><br><br>
+        <label>Email Address:</label><br>
+        <input type="email" name="email"><br>
+        <span class="error">*</span><br><br>
+        <label>Username:</label><br>
+        <input type="text" name="username"><br>
+        <span class="error">*</span><br><br>
+        <label>Password:</label><br>
+        <input type="password" name="password"><br>
+        <span class="error">*</span><br><br>
+        <label>Confirm Password:</label><br>
+        <input type="password" name="confirm_password"><br>
+        <span class="error">*</span><br><br>
+        <label>Age:</label><br>
+        <input type="number" name="age" min="18"><br>
+        <span class="error">*</span><br><br>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female<br>
+        <span class="error">*</span><br><br>
+        <label>Course Selection:</label><br>
+        <select name="course" style="margin: 8px 0; padding: 8px; width: 320px;">
+            <option value="">-- Select a Course --</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Business Administration">Business Administration</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="Medicine">Medicine</option>
+        </select><br>
+        <span class="error">*</span><br><br>
+        <label>
+            <input type="checkbox" name="terms">
+            I agree to the Terms &amp; Conditions
+        </label><br>
+        <span class="error">*</span><br><br>
+        <input type="submit" value="Register" style="padding: 12px 25px; font-size: 16px;">
+
+    </form>
+
+</body>
+</html>
